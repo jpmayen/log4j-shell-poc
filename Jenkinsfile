@@ -3,7 +3,7 @@ pipeline {
     environment {
         IMAGE_REPO_NAME="log4shellpub"
         //REPLACE XXX WITH YOUR STUDENT NUMBER
-        IMAGE_TAG= "std70"        
+        IMAGE_TAG= "std7000"        
         REPOSITORY_URI = "public.ecr.aws/f9n2h3p5/log4shellpub"
         AWS_DEFAULT_REGION = "us-east-1"
     }
@@ -19,7 +19,7 @@ pipeline {
             }
         } 
     
-    stage('Clone repository') { 
+    stage('Clone repository')  
             steps { 
                 script{
                 checkout scm
